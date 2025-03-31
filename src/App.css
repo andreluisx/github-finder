@@ -1,0 +1,132 @@
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; 
+  color: white;
+  z-index: 1;
+  padding-block: 0px;
+}
+
+.rectangle {
+  width: 75%;
+  height: 68%;
+  background-color: black;
+  border-radius: 9px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 4%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.elipse-right {
+  position:absolute;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+}
+
+.elipse-left {
+  position:absolute;
+  z-index: 2;
+  left: 0px;
+  bottom: 0px;
+}
+
+.input-text-div {
+  padding-left: 20px;
+  padding-right: 1px;
+  padding-block: 1px;
+  border-radius: 10px;
+  background-color: white;
+  width: 60vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  .input-text-div {
+    width: 97%;
+  }
+  .rectangle{
+    padding-inline: 40px;
+    height: fit-content;
+  }
+  background {
+    padding-block: 30px;
+  };
+}
+
+.input-search {
+  
+  font-size: medium;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+}
+
+.input-search::placeholder{
+  color: black;
+  font-weight: bold;
+}
+
+.button-search {
+  border-radius: 9px;
+  background-color: #005CFF;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.github-logo {
+  width: 8vh;
+  height: 8vh;
+  filter: invert(100%);
+}
+.github-text {
+  width: 24vh;
+  margin-left: 1;
+  height: 6vh;
+  filter: invert(100%);
+  padding-bottom: 2px;
+}
+
+.header-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 3vh;
+}
+
+.perfil {
+  margin: 0;
+  font-size: 8vh;
+}
+
+.render-component{
+  margin-top: 20px;
+}
+
+error-Text {
+  color: white;
+}

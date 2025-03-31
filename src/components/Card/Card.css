@@ -1,0 +1,79 @@
+.bg-card {
+  background-color: #eeeaea;
+  color: black;
+  font-weight: bold;
+  width: 100vh;
+  border-radius: 8px;
+  padding-inline: 5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+@media(max-width: 1000px) {
+  .bg-card {
+    width: 100%;
+    min-width: 280px;
+    gap:2px;
+    padding-inline: 2px;
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+  }
+  .div-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-text{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+    padding-inline: 10px;
+  }
+  
+}
+
+.div-image-avatar {
+  width: 30vh; /* Tamanho fixo do círculo */
+  height: 30vh; /* Mesma altura para ser um círculo */
+  border-radius: 50%; /* Garante que a div seja redonda */
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #553b3b; /* Cor de fundo caso a imagem não carregue */
+  border: 2px solid #0652d5; /* Opcional: borda para destacar o avatar */
+}
+
+.image-avatar {
+  width: 100%; /* Faz a imagem ocupar toda a div */
+  height: 100%; /* Garante que a imagem preencha a div */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+}
+
+.div-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 15px;
+}
+
+.div-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.username {
+  color: #0753d7;
+  margin-block: 0px;
+  text-align: center;
+}
+
+.description {
+  color: #061734;
+}
