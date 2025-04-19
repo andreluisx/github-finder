@@ -2,8 +2,6 @@ import './Card.css'
 
 export default function Card({data}) {
 
- 
-
   return (
     <div className='bg-card'>
       <div className='div-image'>

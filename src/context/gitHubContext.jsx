@@ -14,11 +14,17 @@ export const ApiProvider = ({ children }) => {
         const response = await fetch(`https://api.github.com/users/${name}`)
         const result = await response.json()
         setData(result)
-        if(response.status === 404){
-          setError({type: 'not-found'})
+        if (response.status === 404) {
+          setError({ type: 'not-found' });
+          setData(null);
+        } else if (response.ok) {
+          setError(null);
+          setData(result);
         } else {
-          setError({type: 'another'})
+          setError({ type: 'another' });
+          setData(null);
         }
+        
       }
     }catch(error){
       setError(true)
@@ -29,7 +35,6 @@ export const ApiProvider = ({ children }) => {
     
   }
 
-  // Buscar os dados ao carregar o contexto
   useEffect(() => {
     fetchData();
   }, []);
